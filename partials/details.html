@@ -10,7 +10,7 @@
  
     <div class="row">
       <div class="col-sm-12">
-  	   <img class="img-responsive detail-image" ng-src="images/trainers/{{exhibits[whichItem].imagename}}.jpg" alt="Photo of {{ exhibits[whichItem].name }}" />
+  	   <img class="img-responsive detail-image" ng-src="images/jockeys/{{exhibits[whichItem].imagename}}.jpg" alt="Photo of {{ exhibits[whichItem].name }}" />
      </div>
     </div>
 
@@ -28,7 +28,7 @@
 
         <div class="row">
             <div class="stats col-xs-10">
-              <p class="stats">Number of Starts: {{ exhibits[whichItem].starts }}</p>
+              <p class="stats">Number of Mounts: {{ exhibits[whichItem].mounts }}</p>
               <p class="stats">Number of Wins: {{ exhibits[whichItem].wins }}</p>
             </div>
 
@@ -40,7 +40,7 @@
 
         <div class="row final-row">
           <div class="col-xs-12">
-            <p class="earnings">Earnings: {{ exhibits[whichItem].earnings }}</p> 
+            <p class="earnings">Earnings of Mounts: {{ exhibits[whichItem].earnings }}</p> 
           </div>
         </div>
       </div>

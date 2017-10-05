@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.qhstrainers" version="1.0" versionCode="1">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.qhsjockeys" version="1.0" versionCode="1">
 
-	<name>QHS Trainers Exhibition</name>
+	<name>QHS Jockeys Exhibition</name>
 
 	<description>
 	A sample app for Up and Running with PhoneGap Build		</description>
