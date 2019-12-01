@@ -5,7 +5,6 @@ body{
 	color:#FFF;
 	font-size:20px;
 	line-height:26px;
-	font-family:"Helvetica Neue", "Garamond", "Arial", sans-serif;
 }
 
 .disable-select{
@@ -15,13 +14,16 @@ body{
   user-select: none;
 }
 
-
 div.main.ng-scope{
 	/*height:100% !important;*/
 }
 
 .container-fluid{
 	/*height:100%;*/
+}
+
+.no-pad{
+	padding:0px;
 }
 
 a{
@@ -48,31 +50,29 @@ li{
 .btm-toolbar{
 	width:100%;
 	position:fixed;
-	background-color:rgba(0,0,0,.9);
+	background-color:#FFF;
 	bottom:0;
-	color:#FFF;
+	color:#CCC;
 	text-align:center;
+	height:45px;
 }
 
-a .glyphicon,
+.arrow-row{
+	top:8px;
+	position:relative;
+}
+
+a .glyphicon{
+	color:#CCC;
+	/* font-size:28px; */
+	font-size:30px;
+	transition:.03s;
+}
+
 a .glyphicon:hover,
 a .glyphicon:active,
 a .glyphicon:active:focus{
-	color:#FFF;
-	padding-top:8px;
-	padding-bottom:10px;
-	font-size:28px;
-}
-
-.circle-icon{
-	width:28px;
-	height:28px;
-	background-color:rgba(0,0,0,0);
-	border:3px solid #FFF;
-	border-radius:50%;
-	margin:0 auto;
-	margin-top:8px;
-	margin-bottom:10px;
+	color:#888;
 }
 
 /* LIST PAGE */
@@ -85,18 +85,6 @@ a .glyphicon:active:focus{
 	background-image:url(../images/bkg/gallery-bkg.jpg);
 	background-repeat:none;
 	background-size:cover;
-}
-
-.gallery-headline{
-	text-transform:uppercase;
-	font-size:60px;
-	padding-top:30px;
-	padding-bottom:15px;
-}
-
-.img-gal{
-	margin-bottom:50px;
-	min-height:300px;
 }
 
 /*Enter the nth-child(6) */
@@ -112,21 +100,8 @@ a .glyphicon:active:focus{
 	padding-top:30px;
 }
 
-.detail-bkg{
-	height:100%;
-	padding-bottom:75px;
-}
-
-.horse-bkg{
-	background-image:url(../images/bkg/jockeys-bkg.jpg);
-	background-repeat:none;
-	background-size:cover;
-
-}
-
 h1{
 	text-align:center;
-	font-family:"Trajan Pro", "Garamond", serif;
 	font-size:50px;
 	font-weight:normal;
 	letter-spacing:5px;
@@ -144,19 +119,14 @@ p{
 
 .detail-image{
 	width:100%;
-	max-width:350px;
-	padding-top:15px;
-	padding-bottom:25px;
+	max-height:989px;
+	/* max-width:768px; */
 	margin:0 auto;
-}
-
-.final-row{
-	margin-bottom:100px;
 }
 
 /*FONTS*/
 
-@font-face {
+/* @font-face {
 	font-family: 'Helvetica Neue';
 	src: url('../fonts/HelveticaNeue.eot');
 	src: url('../fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype'),
@@ -166,36 +136,4 @@ p{
 		url('../fonts/HelveticaNeue.svg#HelveticaNeue') format('svg');
 	font-weight: normal;
 	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Helvetica Neue';
-	src: url('../fonts/HelveticaNeue-Bold.eot');
-	src: url('../fonts/HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/HelveticaNeue-Bold.woff2') format('woff2'),
-		url('../fonts/HelveticaNeue-Bold.woff') format('woff'),
-		url('../fonts/HelveticaNeue-Bold.ttf') format('truetype'),
-		url('../fonts/HelveticaNeue-Bold.svg#HelveticaNeue-Bold') format('svg');
-	font-weight: bold;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Trajan Pro';
-	src: url('../fonts/TrajanPro-Bold.eot');
-	src: url('../fonts/TrajanPro-Bold.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/TrajanPro-Bold.woff') format('woff'),
-		url('../fonts/TrajanPro-Bold.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Trajan Pro';
-	src: url('../fonts/TrajanPro-Regular.eot');
-	src: url('../fonts/TrajanPro-Regular.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/TrajanPro-Regular.woff') format('woff'),
-		url('../fonts/TrajanPro-Regular.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
+} */

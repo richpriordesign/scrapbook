@@ -15,16 +15,16 @@ myApp.filter('trustAsHtml', [
 myApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider.
   //Like an if statement, signifies what page the user has clicked on
-  when('/list', {
-    templateUrl: 'partials/list.html', //The actual library link
-    controller: 'ListController' //This corresponds to the ListController under controllers.js
-  }).
+  // when('/list', {
+  //   templateUrl: 'partials/list.html', //The actual library link
+  //   controller: 'ListController' //This corresponds to the ListController under controllers.js
+  // }).
   when('/details/:itemId', {
   	templateUrl: 'partials/details.html',
   	controller: 'DetailsController'
   }).
   otherwise({
   	//Like an else statement, the default page
-    redirectTo: '/list'
+    redirectTo: '/details/0'
   });
 }]);
